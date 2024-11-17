@@ -211,15 +211,13 @@ position: relative;
     }
 }
 
-header nav .nav_link ul li a {
+header nav .nav_content {
     animation: fadeTop 1s ease-in-out;
     opacity: 1;
+    /* will-change: transform;  */
+
 }
 
-header nav .nav_link ul li a:hover {
-    animation: fadeTop 1s ease-in-out;
-    will-change: transform; 
-}
 
 /* ********************************** */
 
@@ -749,10 +747,6 @@ main .skills_content {
     opacity: 1;
 }
 
-main .skills_content:hover {
-    animation: fadeLeft 1s ease-in-out;
-    will-change: transform; 
-}
 
 
 /* // *********************************************  */
@@ -885,11 +879,6 @@ main .cert_content .cert_card__container{
 main .cert_content .cert_card__container {
     animation: fadeLeft 1s ease-in-out;
     opacity: 1;
-}
-
-main .cert_content .cert_card__container:hover {
-    animation: fadeLeft 1s ease-in-out;
-    will-change: transform; 
 }
 
 
@@ -1122,10 +1111,6 @@ main .project_content .project_container {
     opacity: 1;
 }
 
-main .project_content .project_container:hover {
-    animation: fadeLeft 1s ease-in-out;
-    will-change: transform; 
-}
 
 
 /* *********************************** */
@@ -1349,11 +1334,12 @@ main .contact_content .contact_card{
 main .contact_content .contact_card {
     animation: fadeLeft 1s ease-in-out;
     opacity: 1;
+    will-change: transform; 
+
 }
 
 main .contact_content .contact_card:hover {
     animation: fadeLeft 1s ease-in-out;
-    will-change: transform; 
 }
 
 
