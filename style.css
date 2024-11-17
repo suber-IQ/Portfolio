@@ -145,31 +145,7 @@ header nav .nav_content {
     border-right: 5px solid var(--secondary-color-dark);
 }
 
-/* // 👉 Animation (content)  */
 
-/* Fade-left animation */
-@keyframes fadeTop {
-    0% {
-        opacity: 0;
-        transform: translateY(-50px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-header nav .nav_content {
-    animation: fadeTop 1s ease-in-out;
-    opacity: 1;
-}
-
-header nav .nav_content:hover {
-    animation: fadeTop 1s ease-in-out;
-    will-change: transform; 
-}
-
-/* ********************************** */
 
 header nav .nav_bar {
     display: flex;
@@ -208,6 +184,7 @@ header nav .nav_link ul {
 
 
 
+
 header nav .nav_link ul li a {
 color: var(--text-color);
 font-size: var(--small-font-size);
@@ -218,6 +195,33 @@ transition: border-bottom 0.3s ease, transform 0.3s ease;
 display: inline-block;
 position: relative;
 }
+
+
+/* // 👉 Animation (a)  */
+
+/* Fade-left animation */
+@keyframes fadeTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+header nav .nav_link ul li a {
+    animation: fadeTop 1s ease-in-out;
+    opacity: 1;
+}
+
+header nav .nav_link ul li a:hover {
+    animation: fadeTop 1s ease-in-out;
+    will-change: transform; 
+}
+
+/* ********************************** */
 
 
 header nav .nav_content .nav_bar .nav_link ul li a:hover {
